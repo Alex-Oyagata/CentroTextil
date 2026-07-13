@@ -1,0 +1,20 @@
+{
+  "name": "centrotextil",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lenis": "^1.1.20",
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "oxlint": "^1.71.0",
+    "vite": "^8.1.1"
+  }
+}

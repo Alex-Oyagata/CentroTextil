@@ -1,0 +1,90 @@
+# ============================
+# Node.js / npm
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.pnp/
+.pnp.js
+
+# ============================
+# Vite / Build output
+# ============================
+dist/
+dist-ssr/
+.vite/
+
+# ============================
+# Variables de entorno (¡NUNCA subir!)
+# ============================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+
+# ============================
+# Archivos de caché
+# ============================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# ============================
+# Editores e IDEs
+# ============================
+# VS Code (excepto extensiones recomendadas del equipo)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, PhpStorm, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+
+# Vim / Neovim
+*.sw?
+*.swp
+*.swo
+
+# ============================
+# Sistema Operativo
+# ============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================
+# Archivos temporales
+# ============================
+*.tmp
+*.temp
+*.bak
+*.orig
