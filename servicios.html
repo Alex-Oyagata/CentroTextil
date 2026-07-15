@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Centro Textil</title>
+  <meta name="description" content="Conoce todos nuestros servicios: diseño, impresión, serigrafía, sublimación, vinil de corte y moldería.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/servicios.css">
+</head>
+
+<body>
+
+  <!-- SVG Filters -->
+  <svg style="position:absolute;width:0;height:0;pointer-events:none;">
+    <defs>
+      <filter id="gravity" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" result="noise" seed="5" />
+        <feDisplacementMap class="gravity-displacement" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
+          yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+  </div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-logo">
+      <img src="/Logos/LogoTrasparente.png" alt="Centro Textil" />
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Inicio</a>
+      <a href="/servicios.html" class="nav-link active">Servicios</a>
+      <a href="/galeria.html" class="nav-link">Galería</a>
+      <a href="/#contacto" class="nav-link">Contacto</a>
+    </div>
+    <div class="nav-actions">
+      <a href="/#contacto" class="nav-cta">Cotizar →</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-tag">NUESTROS SERVICIOS</span>
+      <h1 class="page-headline">Todo lo que<br>tu marca<br><em>necesita.</em></h1>
+      <p class="page-subtext">Desde el diseño hasta el producto terminado, ofrecemos seis servicios especializados para dar vida a tus ideas textiles con precisión y estilo.</p>
+    </div>
+    <div class="page-header-stats">
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label">Servicios</span></div>
+      <div class="stat"><span class="stat-num">+500</span><span class="stat-label">Clientes</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Calidad</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICIOS DETALLE ===================== -->
+  <section id="servicios" class="servicios-section">
+
+    <!-- DISEÑO -->
+    <div class="servicio-row">
+      <div class="servicio-text-col">
+        <span class="servicio-number">01</span>
+        <h3 class="servicio-title">Diseño</h3>
+        <p class="servicio-desc">
+          Desde la identidad visual hasta el arte final listo para producción.
+          Nuestro equipo traduce tus ideas en archivos perfectos para cualquier técnica.
+        </p>
+        <ul class="servicio-list">
+          <li>Identidad de marca</li>
+          <li>Arte final para prendas</li>
+          <li>Vectorización y retoque</li>
+        </ul>
+      </div>
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 10.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 12.png')"></div>
+      </div>
+    </div>
+
+    <!-- IMPRESIÓN -->
+    <div class="servicio-row reverse">
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 11.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 13.png')"></div>
+      </div>
+      <div class="servicio-text-col">
+        <span class="servicio-number">02</span>
+        <h3 class="servicio-title">Impresión</h3>
+        <p class="servicio-desc">
+          Impresión digital de alta resolución sobre tela, papel, lona y más.
+          Colores exactos, detalles finos y acabados profesionales.
+        </p>
+        <ul class="servicio-list">
+          <li>Impresión DTF y DTG</li>
+          <li>Gran formato</li>
+          <li>Tirajes pequeños y grandes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SERIGRAFÍA -->
+    <div class="servicio-row">
+      <div class="servicio-text-col">
+        <span class="servicio-number">03</span>
+        <h3 class="servicio-title">Serigrafía</h3>
+        <p class="servicio-desc">
+          La técnica clásica con resultados de élite. Tintas de alta calidad
+          que soportan el uso intensivo y el lavado constante.
+        </p>
+        <ul class="servicio-list">
+          <li>Camisetas y uniformes</li>
+          <li>Tote bags y accesorios</li>
+          <li>Tintas plastisol y al agua</li>
+        </ul>
+      </div>
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 6.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 17.png')"></div>
+      </div>
+    </div>
+
+    <!-- SUBLIMACIÓN -->
+    <div class="servicio-row reverse">
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 7.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 18.png')"></div>
+      </div>
+      <div class="servicio-text-col">
+        <span class="servicio-number">04</span>
+        <h3 class="servicio-title">Sublimación</h3>
+        <p class="servicio-desc">
+          Fusionamos el color directamente con las fibras del tejido.
+          Resultados vivos, duraderos y sin relieve al tacto.
+        </p>
+        <ul class="servicio-list">
+          <li>Ropa deportiva</li>
+          <li>Merchandising corporativo</li>
+          <li>Polyéster y mezclas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VINIL DE CORTE -->
+    <div class="servicio-row">
+      <div class="servicio-text-col">
+        <span class="servicio-number">05</span>
+        <h3 class="servicio-title">Vinil de Corte</h3>
+        <p class="servicio-desc">
+          Cortes milimétricos de vinilo adhesivo y textil para logos,
+          números y piezas gráficas sobre cualquier superficie.
+        </p>
+        <ul class="servicio-list">
+          <li>Vinil textil para prendas</li>
+          <li>Señalética y letreros</li>
+          <li>Ploteo de vehículos</li>
+        </ul>
+      </div>
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 9.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia.png')"></div>
+      </div>
+    </div>
+
+    <!-- MOLDERÍA -->
+    <div class="servicio-row reverse">
+      <div class="servicio-images-col">
+        <div class="simg simg-main reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 14.png')"></div>
+        <div class="simg simg-secondary reveal-img"
+          style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 15.png')"></div>
+      </div>
+      <div class="servicio-text-col">
+        <span class="servicio-number">06</span>
+        <h3 class="servicio-title">Moldería</h3>
+        <p class="servicio-desc">
+          Desarrollo de patrones a medida para colecciones y producciones
+          en serie. Trazado digital con precisión de fábrica.
+        </p>
+        <ul class="servicio-list">
+          <li>Trazado y escalado</li>
+          <li>Colecciones a la medida</li>
+          <li>Producción en serie</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== TEXT MARQUEE ===================== -->
+  <div class="text-marquee-section">
+    <div class="text-marquee-track" id="text-marquee-track">
+      <span>DISEÑO</span><span class="dot">·</span>
+      <span>IMPRESIÓN</span><span class="dot">·</span>
+      <span>SERIGRAFÍA</span><span class="dot">·</span>
+      <span>SUBLIMACIÓN</span><span class="dot">·</span>
+      <span>VINIL DE CORTE</span><span class="dot">·</span>
+      <span>MOLDERÍA</span><span class="dot">·</span>
+      <span>DISEÑO</span><span class="dot">·</span>
+      <span>IMPRESIÓN</span><span class="dot">·</span>
+      <span>SERIGRAFÍA</span><span class="dot">·</span>
+      <span>SUBLIMACIÓN</span><span class="dot">·</span>
+      <span>VINIL DE CORTE</span><span class="dot">·</span>
+      <span>MOLDERÍA</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ===================== CTA ===================== -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-inner">
+      <span class="cta-tag">COMENCEMOS</span>
+      <h2 class="cta-headline">¿Tienes un proyecto<br>en mente?</h2>
+      <a href="mailto:hola@centrotextil.com" class="cta-btn magnetic-btn" id="cta-btn">
+        <span>Cotizar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+    <div class="cta-images">
+      <div class="cta-img-1 reveal-img"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 5.png')"></div>
+      <div class="cta-img-2 reveal-img"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 13.png')"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="/Logos/LogoBN.png" alt="Centro Textil" />
+    </div>
+    <div class="footer-center">
+      <p>© 2026 Centro Textil® — Todos los derechos reservados</p>
+    </div>
+    <div class="footer-links">
+      <span>DISEÑO · IMPRESIÓN · SERIGRAFÍA</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>

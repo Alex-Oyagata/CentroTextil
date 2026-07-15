@@ -3,6 +3,7 @@ import { initCursor } from './cursor.js';
 import { initMarquee, initTextMarquee } from './marquee.js';
 import { initPaseo } from './paseo.js';
 import { initBlackHole, initReveal, initAnimations } from './animations.js';
+import { initNav } from './nav.js';
 
 // ======================== SMOOTH SCROLL ========================
 const lenis = new Lenis({
@@ -22,6 +23,7 @@ requestAnimationFrame(raf);
 
 // ======================== INIT ========================
 document.addEventListener('DOMContentLoaded', () => {
+  initNav();
   initCursor();
   initMarquee();
   initTextMarquee();

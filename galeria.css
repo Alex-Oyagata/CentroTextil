@@ -1,0 +1,182 @@
+/* ======================== GALERÍA PAGE ======================== */
+
+/* Reutiliza .page-header, .page-tag, .page-headline, .page-subtext de servicios.css */
+.page-header {
+  padding: 14rem 5rem 6rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 4rem;
+}
+
+.page-header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.page-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+
+.page-headline {
+  font-size: clamp(48px, 7vw, 110px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.page-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.page-subtext {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--gray);
+  max-width: 440px;
+}
+
+.nav-link.active {
+  opacity: 1;
+  color: var(--pink);
+}
+
+/* ======================== FILTERS ======================== */
+.galeria-full-section {
+  padding: 5rem 3rem 8rem;
+}
+
+.galeria-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.filter-btn {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  background: transparent;
+  border: 1.5px solid var(--border);
+  padding: 0.5rem 1.3rem;
+  border-radius: 100px;
+  cursor: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--dark);
+  color: white;
+  border-color: var(--dark);
+}
+
+.filter-btn.active {
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+/* ======================== GALERÍA GRID ======================== */
+.galeria-grid-full {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 1rem;
+}
+
+.gitem {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: none;
+}
+
+.gitem:hover {
+  transform: scale(0.98);
+}
+
+.gitem.hidden {
+  display: none;
+}
+
+.g-tall {
+  grid-row: span 2;
+}
+
+.g-wide {
+  grid-column: span 2;
+}
+
+/* Label on hover */
+.gitem-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gitem:hover .gitem-label {
+  opacity: 1;
+}
+
+.gitem-label span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* ======================== RESPONSIVE ======================== */
+@media (max-width: 1024px) {
+  .galeria-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    padding: 10rem 1.5rem 4rem;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .galeria-full-section {
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .galeria-grid-full {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 260px;
+    gap: 0.75rem;
+  }
+
+  .g-wide {
+    grid-column: span 1;
+  }
+
+  .g-tall {
+    grid-row: span 1;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — Centro Textil</title>
+  <meta name="description" content="Galería de trabajos de Centro Textil: diseño, impresión, serigrafía, sublimación y más.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/galeria.css">
+</head>
+
+<body>
+
+  <!-- SVG Filters -->
+  <svg style="position:absolute;width:0;height:0;pointer-events:none;">
+    <defs>
+      <filter id="gravity" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" result="noise" seed="5" />
+        <feDisplacementMap class="gravity-displacement" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
+          yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+  </div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-logo">
+      <img src="/Logos/LogoTrasparente.png" alt="Centro Textil" />
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Inicio</a>
+      <a href="/servicios.html" class="nav-link">Servicios</a>
+      <a href="/galeria.html" class="nav-link active">Galería</a>
+      <a href="/#contacto" class="nav-link">Contacto</a>
+    </div>
+    <div class="nav-actions">
+      <a href="/#contacto" class="nav-cta">Cotizar →</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="page-tag">GALERÍA</span>
+      <h1 class="page-headline">Nuestro trabajo<br>habla por<br><em>sí solo.</em></h1>
+      <p class="page-subtext">Una muestra de lo que hacemos. Cada pieza es el resultado de creatividad, técnica y pasión por los detalles.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA FULL ===================== -->
+  <section class="galeria-full-section">
+
+    <!-- Filtros de categoría -->
+    <div class="galeria-filters" id="galeria-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="diseno">Diseño</button>
+      <button class="filter-btn" data-filter="impresion">Impresión</button>
+      <button class="filter-btn" data-filter="serigrafia">Serigrafía</button>
+      <button class="filter-btn" data-filter="sublimacion">Sublimación</button>
+      <button class="filter-btn" data-filter="vinil">Vinil</button>
+      <button class="filter-btn" data-filter="molderia">Moldería</button>
+    </div>
+
+    <!-- Grid de galería -->
+    <div class="galeria-grid-full" id="galeria-grid">
+
+      <div class="gitem g-tall reveal-img" data-category="serigrafia"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 16.png')">
+        <div class="gitem-label"><span>Serigrafía</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="diseno"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 10.png')">
+        <div class="gitem-label"><span>Diseño</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="impresion"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 11.png')">
+        <div class="gitem-label"><span>Impresión</span></div>
+      </div>
+
+      <div class="gitem g-wide reveal-img" data-category="sublimacion"
+        style="background-image:url('/ImagenesRecursos/2BC0F40E1B7B60BD.png')">
+        <div class="gitem-label"><span>Sublimación</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="diseno"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 12.png')">
+        <div class="gitem-label"><span>Diseño</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="impresion"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 4.png')">
+        <div class="gitem-label"><span>Impresión</span></div>
+      </div>
+
+      <div class="gitem g-tall reveal-img" data-category="vinil"
+        style="background-image:url('/ImagenesRecursos/2BC95F1AD589B504.png')">
+        <div class="gitem-label"><span>Vinil</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="serigrafia"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 6.png')">
+        <div class="gitem-label"><span>Serigrafía</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="sublimacion"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 7.png')">
+        <div class="gitem-label"><span>Sublimación</span></div>
+      </div>
+
+      <div class="gitem g-wide reveal-img" data-category="molderia"
+        style="background-image:url('/ImagenesRecursos/2BC95F1AD589B505.png')">
+        <div class="gitem-label"><span>Moldería</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="vinil"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 9.png')">
+        <div class="gitem-label"><span>Vinil</span></div>
+      </div>
+
+      <div class="gitem reveal-img" data-category="molderia"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia.png')">
+        <div class="gitem-label"><span>Moldería</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-inner">
+      <span class="cta-tag">COMENCEMOS</span>
+      <h2 class="cta-headline">¿Te gustó lo<br>que viste?</h2>
+      <a href="mailto:hola@centrotextil.com" class="cta-btn magnetic-btn" id="cta-btn">
+        <span>Cotizar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+    <div class="cta-images">
+      <div class="cta-img-1 reveal-img"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 5.png')"></div>
+      <div class="cta-img-2 reveal-img"
+        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 13.png')"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="/Logos/LogoBN.png" alt="Centro Textil" />
+    </div>
+    <div class="footer-center">
+      <p>© 2026 Centro Textil® — Todos los derechos reservados</p>
+    </div>
+    <div class="footer-links">
+      <span>DISEÑO · IMPRESIÓN · SERIGRAFÍA</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/galeria.js"></script>
+</body>
+
+</html>
