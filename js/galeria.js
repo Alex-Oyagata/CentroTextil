@@ -1,7 +1,7 @@
 // ======================== GALLERY FILTER ========================
 export function initGaleriaFilter() {
   const filters = document.querySelectorAll('.filter-btn');
-  const items = document.querySelectorAll('.gitem[data-category]');
+  const items = document.querySelectorAll('.product-card[data-category]');
 
   if (!filters.length || !items.length) return;
 
@@ -15,14 +15,14 @@ export function initGaleriaFilter() {
 
       items.forEach(item => {
         if (filter === 'all' || item.dataset.category === filter) {
-          item.classList.remove('hidden');
+          item.style.display = 'flex';
           // Reset reveal animation for newly shown items
           item.classList.remove('visible');
           requestAnimationFrame(() => {
             item.classList.add('visible');
           });
         } else {
-          item.classList.add('hidden');
+          item.style.display = 'none';
         }
       });
     });

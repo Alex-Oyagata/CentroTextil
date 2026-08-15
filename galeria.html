@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galería — Centro Textil</title>
-  <meta name="description" content="Galería de trabajos de Centro Textil: diseño, impresión, serigrafía, sublimación y más.">
+  <meta name="description"
+    content="Galería de trabajos de Centro Textil: diseño, impresión, serigrafía, sublimación y más.">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/galeria.css">
 </head>
@@ -38,7 +39,7 @@
       <a href="/" class="nav-link">Inicio</a>
       <a href="/servicios.html" class="nav-link">Servicios</a>
       <a href="/galeria.html" class="nav-link active">Galería</a>
-      <a href="/#contacto" class="nav-link">Contacto</a>
+      <a href="/contacto.html" class="nav-link">Contacto</a>
     </div>
     <div class="nav-actions">
       <a href="/#contacto" class="nav-cta">Cotizar →</a>
@@ -53,116 +54,266 @@
     <div class="page-header-inner">
       <span class="page-tag">GALERÍA</span>
       <h1 class="page-headline">Nuestro trabajo<br>habla por<br><em>sí solo.</em></h1>
-      <p class="page-subtext">Una muestra de lo que hacemos. Cada pieza es el resultado de creatividad, técnica y pasión por los detalles.</p>
+      <p class="page-subtext">Una muestra de lo que hacemos. Cada pieza es el resultado de creatividad, técnica y pasión
+        por los detalles.</p>
+    </div>
+    <div class="page-header-image">
+      <img src="/ImagenesRecursos/FotoPruebaTrasparente.png" alt="Galería Centro Textil" />
     </div>
   </section>
 
-  <!-- ===================== GALERIA FULL ===================== -->
-  <section class="galeria-full-section">
+  <!-- ===================== GALERIA PRODUCTOS ===================== -->
+  <section class="product-gallery-section">
+    <div class="container">
+      <!-- Filtros de categoría -->
+      <div class="galeria-filters" id="galeria-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="diseno">Diseño</button>
+        <button class="filter-btn" data-filter="impresion">Impresión</button>
+        <button class="filter-btn" data-filter="serigrafia">Serigrafía</button>
+        <button class="filter-btn" data-filter="sublimacion">Sublimación</button>
+        <button class="filter-btn" data-filter="vinil">Vinil</button>
+        <button class="filter-btn" data-filter="molderia">Moldería</button>
+      </div>
 
-    <!-- Filtros de categoría -->
-    <div class="galeria-filters" id="galeria-filters">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="diseno">Diseño</button>
-      <button class="filter-btn" data-filter="impresion">Impresión</button>
-      <button class="filter-btn" data-filter="serigrafia">Serigrafía</button>
-      <button class="filter-btn" data-filter="sublimacion">Sublimación</button>
-      <button class="filter-btn" data-filter="vinil">Vinil</button>
-      <button class="filter-btn" data-filter="molderia">Moldería</button>
+      <div class="product-grid">
+        <!-- Item 1 -->
+        <div class="product-card" data-category="sublimacion">
+          <div class="product-img-wrapper">
+            <span class="product-badge">POPULAR</span>
+            <img src="/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 11.png" alt="Pack Calcetines"
+              class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">PACK CALCETINES CREATIVE</h3>
+              <span class="product-price">$12.99</span>
+            </div>
+            <p class="product-material">MATERIAL: ALGODÓN PEINADO</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="product-card" data-category="serigrafia">
+          <div class="product-img-wrapper">
+            <img src="/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 6.png" alt="T-Shirt Premium"
+              class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">T-SHIRT PREMIUM HEAVY</h3>
+              <span class="product-price">$18.50</span>
+            </div>
+            <p class="product-material">MATERIAL: 100% ALGODÓN</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="product-card" data-category="vinil">
+          <div class="product-img-wrapper">
+            <img src="/ImagenesRecursos/2BC95F1AD589B505.png" alt="Gorra Snapback" class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">GORRA SNAPBACK TECH</h3>
+              <span class="product-price">$15.00</span>
+            </div>
+            <p class="product-material">MATERIAL: MEZCLA POLIÉSTER</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="product-card" data-category="impresion">
+          <div class="product-img-wrapper">
+            <img src="/ImagenesRecursos/2BC0F40E1B7B60BD.png" alt="Hoodie Oversize" class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">HOODIE OVERSIZE URBAN</h3>
+              <span class="product-price">$45.00</span>
+            </div>
+            <p class="product-material">MATERIAL: FLEECE 400G</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="product-card" data-category="diseno">
+          <div class="product-img-wrapper">
+            <img src="/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 7.png" alt="Tote Bag" class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">TOTE BAG ECO CANVAS</h3>
+              <span class="product-price">$9.99</span>
+            </div>
+            <p class="product-material">MATERIAL: LONA RECICLADA</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="product-card" data-category="molderia">
+          <div class="product-img-wrapper">
+            <img src="/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 10.png" alt="Polo Executive"
+              class="product-img">
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">POLO EXECUTIVE PIQUÉ</h3>
+              <span class="product-price">$22.00</span>
+            </div>
+            <p class="product-material">MATERIAL: 100% PIQUÉ COTTON</p>
+            <a href="#" class="product-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              PEDIR POR WHATSAPP
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <!-- Grid de galería -->
-    <div class="galeria-grid-full" id="galeria-grid">
-
-      <div class="gitem g-tall reveal-img" data-category="serigrafia"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 16.png')">
-        <div class="gitem-label"><span>Serigrafía</span></div>
+  <!-- ===================== PROCESO DE COMPRA ===================== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="process-header">
+        <div class="process-title-col">
+          <span class="process-tag">PROCESO DE COMPRA</span>
+          <h2 class="process-headline">¿CÓMO REALIZAR<br>TU PEDIDO?</h2>
+          <p class="process-desc">Nuestro proceso es ágil y personalizado para asegurar que tu diseño se imprima
+            exactamente como lo imaginaste.</p>
+        </div>
+        <div class="process-status-col">
+          <div class="process-line"></div>
+          <div class="process-status-row">
+            <span class="status-item">ESTADO: DISPONIBLE</span>
+            <span class="status-item">TIEMPO ESTIMADO: 3-5 DÍAS</span>
+          </div>
+        </div>
       </div>
 
-      <div class="gitem reveal-img" data-category="diseno"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 10.png')">
-        <div class="gitem-label"><span>Diseño</span></div>
-      </div>
+      <div class="process-steps">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+          </div>
+          <h3 class="step-title">ELIGE TU PRODUCTO</h3>
+          <p class="step-desc">Selecciona la prenda y el color que mejor se adapte a tu proyecto creativo.</p>
+        </div>
 
-      <div class="gitem reveal-img" data-category="impresion"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 11.png')">
-        <div class="gitem-label"><span>Impresión</span></div>
-      </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+              <path d="M14 3v5h5M12 18v-6M9 15l3-3 3 3" />
+            </svg>
+          </div>
+          <h3 class="step-title">ENVÍA TU DISEÑO</h3>
+          <p class="step-desc">Adjunta tus archivos en alta resolución o solicita apoyo de nuestro equipo de diseño.</p>
+        </div>
 
-      <div class="gitem g-wide reveal-img" data-category="sublimacion"
-        style="background-image:url('/ImagenesRecursos/2BC0F40E1B7B60BD.png')">
-        <div class="gitem-label"><span>Sublimación</span></div>
-      </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+          </div>
+          <h3 class="step-title">CONFIRMA POR WHATSAPP</h3>
+          <p class="step-desc">Habla con un experto para definir cantidades, tallas y detalles técnicos de impresión.
+          </p>
+        </div>
 
-      <div class="gitem reveal-img" data-category="diseno"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 12.png')">
-        <div class="gitem-label"><span>Diseño</span></div>
+        <div class="step-card">
+          <span class="step-num">04</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+          <h3 class="step-title">RECIBE Y DISFRUTA</h3>
+          <p class="step-desc">Producción rápida y envío seguro directo a tu puerta o taller.</p>
+        </div>
       </div>
-
-      <div class="gitem reveal-img" data-category="impresion"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 4.png')">
-        <div class="gitem-label"><span>Impresión</span></div>
-      </div>
-
-      <div class="gitem g-tall reveal-img" data-category="vinil"
-        style="background-image:url('/ImagenesRecursos/2BC95F1AD589B504.png')">
-        <div class="gitem-label"><span>Vinil</span></div>
-      </div>
-
-      <div class="gitem reveal-img" data-category="serigrafia"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 6.png')">
-        <div class="gitem-label"><span>Serigrafía</span></div>
-      </div>
-
-      <div class="gitem reveal-img" data-category="sublimacion"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 7.png')">
-        <div class="gitem-label"><span>Sublimación</span></div>
-      </div>
-
-      <div class="gitem g-wide reveal-img" data-category="molderia"
-        style="background-image:url('/ImagenesRecursos/2BC95F1AD589B505.png')">
-        <div class="gitem-label"><span>Moldería</span></div>
-      </div>
-
-      <div class="gitem reveal-img" data-category="vinil"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 9.png')">
-        <div class="gitem-label"><span>Vinil</span></div>
-      </div>
-
-      <div class="gitem reveal-img" data-category="molderia"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia.png')">
-        <div class="gitem-label"><span>Moldería</span></div>
-      </div>
-
     </div>
   </section>
 
   <!-- ===================== CTA ===================== -->
   <section id="contacto" class="cta-section">
-    <div class="cta-inner">
-      <span class="cta-tag">COMENCEMOS</span>
-      <h2 class="cta-headline">¿Te gustó lo<br>que viste?</h2>
-      <a href="mailto:hola@centrotextil.com" class="cta-btn magnetic-btn" id="cta-btn">
-        <span>Cotizar ahora</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
-      </a>
-    </div>
-    <div class="cta-images">
-      <div class="cta-img-1 reveal-img"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 5.png')"></div>
-      <div class="cta-img-2 reveal-img"
-        style="background-image:url('/ImagenesRecursos/WEB RECURSOS_Mesa de trabajo 1 copia 13.png')"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <span class="cta-tag">COMENCEMOS</span>
+        <h2 class="cta-headline">¿Te gustó lo<br>que viste?</h2>
+        <a href="mailto:hola@centrotextil.com" class="cta-btn magnetic-btn" id="cta-btn">
+          <span>Cotizar ahora</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer-new">
     <div class="container">
-      <div class="footer-promo text-center">
-        <h2 class="display-2">Tenemos el paquete a la medida para ti.</h2>
-      </div>
+
 
       <div class="footer-grid">
         <div class="footer-col">
@@ -203,14 +354,26 @@
           <p>WhatsApp: +593 99 520 2556</p>
           <p>Email: centrotextilec@gmail.com</p>
           <div class="footer-socials">
-            <a href="https://www.facebook.com/centrotextilec" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            <a href="https://www.facebook.com/centrotextilec" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+              </svg>
             </a>
-            <a href="https://www.instagram.com/centrotextilec/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://www.instagram.com/centrotextilec/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
             </a>
-            <a href="https://www.tiktok.com/@centrotextilec" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            <a href="https://www.tiktok.com/@centrotextilec" target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -227,22 +390,34 @@
   <div class="social-sidebar">
     <div class="social-icons">
       <a href="https://www.facebook.com/centrotextilec" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
       </a>
-      <a href="https://www.instagram.com/centrotextilec/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      <a href="https://www.instagram.com/centrotextilec/" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
       </a>
       <a href="https://www.tiktok.com/@centrotextilec" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+        </svg>
       </a>
     </div>
   </div>
 
   <!-- Floating Buttons -->
   <div class="floating-actions">
-    <a href="https://wa.me/593995202556" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp">
+    <a href="https://wa.me/593995202556" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+      title="Contactar por WhatsApp">
       <svg viewBox="0 0 24 24" width="32" height="32">
-        <path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.412 2.503 1.112 3.487l-.051.01.033.158-.351 1.29 1.319-.344.154.03-.01-.051c.956.632 2.1 1.002 3.321 1.002 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.586-5.766-5.767-5.766zm3.365 8.357c-.144.405-.71.741-1.018.789-.262.041-.547.07-.914-.051-.235-.077-.53-.196-1.142-.465-1.102-.484-1.921-1.608-1.976-1.681-.055-.073-.451-.599-.451-1.142 0-.543.284-.81.386-.922.102-.112.222-.14.296-.14.074 0 .147.001.21.004.072.003.17-.027.265.202.098.236.336.818.365.877.029.059.048.127.01.203-.04.077-.059.124-.118.193-.059.069-.124.154-.177.206-.059.058-.121.121-.052.238.07.117.31.511.666.828.458.408.845.535.962.593.117.059.186.049.255-.029.069-.078.295-.345.373-.464.078-.117.158-.098.265-.059.108.039.686.324.804.383.118.059.196.088.225.137.029.049.029.284-.115.689zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.171L2 22l4.973-1.305A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.724 0-3.335-.483-4.706-1.32l-.338-.206-2.49.653.665-2.438-.226-.36A7.952 7.952 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+        <path fill="currentColor"
+          d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.412 2.503 1.112 3.487l-.051.01.033.158-.351 1.29 1.319-.344.154.03-.01-.051c.956.632 2.1 1.002 3.321 1.002 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.586-5.766-5.767-5.766zm3.365 8.357c-.144.405-.71.741-1.018.789-.262.041-.547.07-.914-.051-.235-.077-.53-.196-1.142-.465-1.102-.484-1.921-1.608-1.976-1.681-.055-.073-.451-.599-.451-1.142 0-.543.284-.81.386-.922.102-.112.222-.14.296-.14.074 0 .147.001.21.004.072.003.17-.027.265.202.098.236.336.818.365.877.029.059.048.127.01.203-.04.077-.059.124-.118.193-.059.069-.124.154-.177.206-.059.058-.121.121-.052.238.07.117.31.511.666.828.458.408.845.535.962.593.117.059.186.049.255-.029.069-.078.295-.345.373-.464.078-.117.158-.098.265-.059.108.039.686.324.804.383.118.059.196.088.225.137.029.049.029.284-.115.689zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.171L2 22l4.973-1.305A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.724 0-3.335-.483-4.706-1.32l-.338-.206-2.49.653.665-2.438-.226-.36A7.952 7.952 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
       </svg>
     </a>
   </div>
