@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         servicios: resolve(__dirname, 'servicios.html'),
         galeria: resolve(__dirname, 'galeria.html'),
+        contacto: resolve(__dirname, 'contacto.html'),
       },
     },
   },
